@@ -1,0 +1,14 @@
+<div id="app-todo">
+  <h1>Todos</h1>
+  <div id="todos"></div>
+  <form
+    id="todo-form"
+    onsubmit='monkshu_env.components["app-todo"].onFormSubmit(event)'
+  >
+    <input type="text" id="todo-input" placeholder="Add a todo..." required />
+    <button>Add</button>
+  </form>
+  <script>
+    monkshu_env.components["app-todo"].renderTodos();
+  </script>
+</div>
